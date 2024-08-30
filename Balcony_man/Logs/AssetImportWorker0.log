@@ -241,3 +241,43 @@ Number of updated assets reloaded before import = 0
 Start importing Assets/Font/NeedleteethSP_0 SDF.asset using Guid(14016fb9ade4e594aa572b1d26be781d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
  -> (artifact id: 'dd5f6c978a4ff57d1c9c6b0d3e7443b0') in 0.037371 seconds 
 Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 126.359707 seconds.
+  path: Assets/Models/Room/Room.blend
+  artifactKey: Guid(3d69aaa27eae36f46a72ec6202f7d726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Room/Room.blend using Guid(3d69aaa27eae36f46a72ec6202f7d726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54763b64518d67c86aa1725d996ac4ca') in 0.020969 seconds 
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 805.554303 seconds.
+  path: Assets/Models/Room/Room.prefab
+  artifactKey: Guid(9c48b2f5dc3d6ab4bbb8d9c66e68a738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Room/Room.prefab using Guid(9c48b2f5dc3d6ab4bbb8d9c66e68a738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ab5b2544bfa411266fa7640bff86710') in 0.027387 seconds 
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 5.448669 seconds.
+  path: Assets/Models/Room/Room.blend1
+  artifactKey: Guid(1740b45c9ba7e6d4a8224680ce3b57e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Room/Room.blend1 using Guid(1740b45c9ba7e6d4a8224680ce3b57e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c663fd9fb8d9821ec1725498ae43c73') in 0.004742 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 69.020949 seconds.
+  path: Assets/Models/Room/Materials
+  artifactKey: Guid(d6a85ba099450af4f9320a0cce8be2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Room/Materials using Guid(d6a85ba099450af4f9320a0cce8be2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7f04838717df353da5cf0db234c8a1c') in 0.002127 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.958320 seconds.
+  path: Assets/Models/Room/Texture
+  artifactKey: Guid(674b55d3310e1a146919271ce4067ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Room/Texture using Guid(674b55d3310e1a146919271ce4067ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd61ad384e4636eef2eaeeb207ab893f7') in 0.002211 seconds 
+Number of asset objects unloaded after import = 0
