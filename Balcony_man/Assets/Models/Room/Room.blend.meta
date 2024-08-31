@@ -3,7 +3,52 @@ guid: 3d69aaa27eae36f46a72ec6202f7d726
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: cc26a85034aba9549bcd2295939a5ab0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wallpaper
+    second: {fileID: 2100000, guid: a0ae734121a11674098061b39387c60c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0411\u0430\u043B\u043A\u043E\u043D"
+    second: {fileID: 2100000, guid: b9cf4bd089f3b7e478206ca8dcddc3e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0411\u0435\u0442\u043E\u043D"
+    second: {fileID: 2100000, guid: 6c724dd675887604cb882982afe2d28c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u041C\u0430\u0442\u0435\u0440\u0438\u0430\u043B"
+    second: {fileID: 2100000, guid: 6d58fb226e68ffb4db4968809032bb37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0428\u0442\u0443\u043A\u0430\u0442\u0443\u0440\u043A\u0430_\u043A\u0440\u0443\u043F\u043D\u0430\u044F"
+    second: {fileID: 2100000, guid: dc2f0e352bc42cc4a878a123a2566715, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u043C\u0435\u0442\u0430\u043B\u043B"
+    second: {fileID: 2100000, guid: 19713769ca58c684ea0e815599cd16ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0448\u0442\u0443\u043A\u0430\u0442\u0443\u0440\u043A\u0430"
+    second: {fileID: 2100000, guid: 97fa32604d3838b43a44728f186cf827, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0448\u0442\u0443\u043A\u0430\u0442\u0443\u0440\u043A\u0430 \u043A\u0440\u0430\u0441\u043D\u0430\u044F"
+    second: {fileID: 2100000, guid: e30b85730ccf82c4faa76587aca75677, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
