@@ -7,14 +7,14 @@ using UnityEngine;
 public class EventManager : MonoBehaviour
 {
     [SerializeField] Event _evenet;
-    [SerializeField] int IndexEvent = 0;
+
     public void Start()
     {
-
+        _evenet.Start();
     }
     private void Update()
     {
-        _evenet.OnCurrentEvent(IndexEvent);
+        _evenet.OnCurrentEvent();
     }
     public void GetEvent(){
 
@@ -33,36 +33,29 @@ public class Event
 
 
     public GameObject[] TriggerForLaunchEvent;
-
-    void Start()
+    public int Current;
+    public void Start()
     {
         for(int i = 0; i < TriggerForLaunchEvent.Length; i++)
         {
-            TriggerForLaunchEvent[i].SetActive(false);
+            TriggerForLaunchEvent[i].SetActive(true);
         }
     }
 
-    public void OnCurrentEvent(int Current)
+    public void OnCurrentEvent()
     {
         Debug.Log("События: " + names[Current] + " Триггеров: " + TriggerForLaunchEvent[Current]);
 
-        Current = TriggerForLaunchEvent.Length;
-
-        if(Current >= TriggerForLaunchEvent.Length - 1)
-        {
-            Current = 0;
-        }
-        // Проверка массивов для names
-        if(Current >= 0 && Current < names.Length -1 )
+        if(Current >= 0 && Current < names.Length - 1)
         {
             names[Current] = names[Current];
         }
         else{
-            Current = names.Length + 1;
+
+            Current = names.Length;
         }
         //Создаем коллайдер чтобы проверить с каким именно он сталкунлся для запуска триггера
-        Collider[] hitCollider = Physics.OverlapBox(TriggerForLaunchEvent[Current].transform.position, TriggerForLaunchEvent[Current].transform.position, Quaternion.identity);
-        hitCollider[Current] =  TriggerForLaunchEvent[Current].GetComponent<Collider>();
+        Collider[] hitCollider = Physics.OverlapBox(TriggerForLaunchEvent[Current].transform.position, TriggerForLaunchEvent[Current].transform.localScale / 2);
 
         if(hitCollider[Current].CompareTag("Player"))
         {
