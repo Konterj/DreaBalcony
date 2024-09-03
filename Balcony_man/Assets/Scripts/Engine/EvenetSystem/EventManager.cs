@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,9 +7,14 @@ using UnityEngine;
 public class EventManager : MonoBehaviour
 {
     [SerializeField] Event _evenet;
+    [SerializeField] int IndexEvent = 0;
     public void Start()
     {
 
+    }
+    private void Update()
+    {
+        _evenet.OnCurrentEvent(IndexEvent);
     }
     public void GetEvent(){
 
