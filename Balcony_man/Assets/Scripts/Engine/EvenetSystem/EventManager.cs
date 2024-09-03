@@ -44,7 +44,7 @@ public class Event
 
     public void OnCurrentEvent(int Current)
     {
-        Debug.Log("События: " + names[Current] + "Триггеров: " + TriggerForLaunchEvent[Current]);
+        Debug.Log("События: " + names[Current] + " Триггеров: " + TriggerForLaunchEvent[Current]);
 
         Current = TriggerForLaunchEvent.Length;
 
@@ -62,12 +62,12 @@ public class Event
         }
         //Создаем коллайдер чтобы проверить с каким именно он сталкунлся для запуска триггера
         Collider[] hitCollider = Physics.OverlapBox(TriggerForLaunchEvent[Current].transform.position, TriggerForLaunchEvent[Current].transform.position, Quaternion.identity);
-        Current = hitCollider.Length - 1;
-        names[Current] = names.ToString();
+        hitCollider[Current] =  TriggerForLaunchEvent[Current].GetComponent<Collider>();
+
         if(hitCollider[Current].CompareTag("Player"))
         {
-            hitCollider[Current].gameObject.SetActive(false);
-            Debug.Log(hitCollider[Current].ToString() + ":Включен" );
+            TriggerForLaunchEvent[Current].gameObject.SetActive(false);
+            Debug.Log(hitCollider[Current].ToString() + ":Включен Триггер" );
         }
     }
 }
