@@ -31,36 +31,24 @@ public class Event
 {
     public string[] names;
 
-
-    public GameObject[] TriggerForLaunchEvent;
+    public Collider[]  hitCollider;
     public int Current;
     public void Start()
     {
-        for(int i = 0; i < TriggerForLaunchEvent.Length; i++)
+        for(int i = 0; i < hitCollider.Length; i++)
         {
-            TriggerForLaunchEvent[i].SetActive(true);
+            if(hitCollider[i] is null)
+            {
+                hitCollider[i].GetComponent<Collider>();
+            }
         }
     }
 
     public void OnCurrentEvent()
     {
-        Debug.Log("События: " + names[Current] + " Триггеров: " + TriggerForLaunchEvent[Current]);
-
-        if(Current >= 0 && Current < names.Length - 1)
+        foreach(Collider other in hitCollider)
         {
-            names[Current] = names[Current];
-        }
-        else{
-
-            Current = names.Length;
-        }
-        //Создаем коллайдер чтобы проверить с каким именно он сталкунлся для запуска триггера
-        Collider[] hitCollider = Physics.OverlapBox(TriggerForLaunchEvent[Current].transform.position, TriggerForLaunchEvent[Current].transform.localScale / 2);
-
-        if(hitCollider[Current].CompareTag("Player"))
-        {
-            TriggerForLaunchEvent[Current].gameObject.SetActive(false);
-            Debug.Log(hitCollider[Current].ToString() + ":Включен Триггер" );
+            //fix there Code, write this code 06.09.2024/ 22:04:50 times
         }
     }
 }
