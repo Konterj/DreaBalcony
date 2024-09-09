@@ -8,22 +8,23 @@ public class EventManager : MonoBehaviour
 {
     [SerializeField] Event _evenet;
 
-    public void Start()
-    {
-        _evenet.Start();
-    }
+    [SerializeField] public int EventCurrent{get;set;}
     private void Update()
     {
-        _evenet.OnCurrentEvent();
+        GetEvent();
     }
     public void GetEvent(){
 
+        _evenet.OnGetEvent();
+        OnSetEvent();
     }
 
-    public void SetEvent()
+    public void OnSetEvent()
     {
-
+        _evenet.Current = EventCurrent;
+        Debug.Log("События: " + _evenet.names[_evenet.Current]);
     }
+
 }
 
 [System.Serializable]
@@ -31,24 +32,14 @@ public class Event
 {
     public string[] names;
 
-    public Collider[]  hitCollider;
-    public int Current;
-    public void Start()
+    public int Current = 0;
+
+    public void OnGetEvent()
     {
-        for(int i = 0; i < hitCollider.Length; i++)
+        if(Current > names.Length - 1)
         {
-            if(hitCollider[i] is null)
-            {
-                hitCollider[i].GetComponent<Collider>();
-            }
+            Current = 0;
         }
     }
 
-    public void OnCurrentEvent()
-    {
-        foreach(Collider other in hitCollider)
-        {
-            //fix there Code, write this code 06.09.2024/ 22:04:50 times
-        }
-    }
 }
