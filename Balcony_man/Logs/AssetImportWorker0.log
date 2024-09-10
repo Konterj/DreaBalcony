@@ -800,3 +800,59 @@ Received Import Request.
 Number of updated assets reloaded before import = 0
 Start importing Assets/Scripts/PlayerController/Player.prefab using Guid(65c362100a7c658438970337cf05631b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60605ef434d62887642788f777a8dedd') in 0.061962 seconds 
 Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 1841.226173 seconds.
+  path: Assets/Models/Objects/Light
+  artifactKey: Guid(f10f0b00a2e76454389f5d2d5b954336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Objects/Light using Guid(f10f0b00a2e76454389f5d2d5b954336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ccaa33443897f44c273243c53717203') in 0.014479 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.147230 seconds.
+  path: Assets/Models/Objects/Light/Light.fbx
+  artifactKey: Guid(13ef5e352ad517148ad9585f02a395a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Objects/Light/Light.fbx using Guid(13ef5e352ad517148ad9585f02a395a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ebf648b85ef5cefc85bef5bcdefa933') in 0.756996 seconds 
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 52.564017 seconds.
+  path: Assets/Models/Objects/Light/Light.fbx
+  artifactKey: Guid(13ef5e352ad517148ad9585f02a395a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Objects/Light/Light.fbx using Guid(13ef5e352ad517148ad9585f02a395a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06963daa8bdebdb4debf72947ffe880f') in 0.028187 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.239635 seconds.
+  path: Assets/Models/Objects/Light/Light.fbx
+  artifactKey: Guid(13ef5e352ad517148ad9585f02a395a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Objects/Light/Light.fbx using Guid(13ef5e352ad517148ad9585f02a395a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21be0e5f7001ca1e433c3bd9a68c9d33') in 0.041429 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Models/Objects/Light/Подложъе.mat
+  artifactKey: Guid(ee3e26d2186be584e9bac8b794d62a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Objects/Light/Подложъе.mat using Guid(ee3e26d2186be584e9bac8b794d62a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b36aa26915ed6465c01ec47408df05dd') in 0.030891 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Models/Objects/Light/Кончик.mat
+  artifactKey: Guid(93c31678151e1fa44bb41c979bea3cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Objects/Light/Кончик.mat using Guid(93c31678151e1fa44bb41c979bea3cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c346f641e4835dd6b876d3ca950cb492') in 0.032567 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/Objects/Light/Стекло.mat
+  artifactKey: Guid(c3a391b4edfe9694cb7f47774e0d5597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Models/Objects/Light/Стекло.mat using Guid(c3a391b4edfe9694cb7f47774e0d5597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cabf9d9dc6c967e344af4f478df15c4e') in 0.031928 seconds 
+Number of asset objects unloaded after import = 2
