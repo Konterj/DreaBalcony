@@ -4,16 +4,19 @@ public class PlayerMovementer : MonoBehaviour
 {
     [Header("Player")]
     public Camera cam;
-    // private AudioSource _source;
-    //private AudioClip[] clips;
 
     [Header("Setting Player")]
     [SerializeField] public float moveSpeed = 2f;
     [SerializeField] public float Gravitytation = -9.8f;
     [SerializeField] public float Sensentivity = 100f;
+
+    //private AudioSource _source;
+    //private AudioClip[] clips;
+
     private CharacterController _player;
     private float XRoted;
     private Vector3 Gravity;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -26,12 +29,23 @@ public class PlayerMovementer : MonoBehaviour
     {
         OnMovementer();
         OnRotatedCam();
+        OnCheckGroundForAudio();
     }
 
     public void OnIntilization()
     {
         _player = GetComponent<CharacterController>();
         // _source = GetComponent<AudioSource>();
+        
+        //CLips Get
+        /*for(int i = 0; i < clips.Length; i++)
+        {
+            if(clips[i] is null)
+            {
+                clips[i] = GetComponent<AudioClip>();
+            }
+        }*/
+
         if(cam is null)
         {
             cam = GetComponent<Camera>();
@@ -65,4 +79,36 @@ public class PlayerMovementer : MonoBehaviour
         cam.transform.localRotation = Quaternion.Euler(XRoted, 0f, 0f);
         _player.transform.Rotate(Vector3.up * X_rot);
     }
+
+        private void OnCheckGroundForAudio()
+    {
+        Collider[] hitColliders;
+        LayerMask grassLayer = LayerMask.GetMask("Grass");
+        LayerMask floorLayer = LayerMask.GetMask("Floor");
+        LayerMask concreteLayer = LayerMask.GetMask("Concrete");
+
+        // Replace Vector3.down with the player's position
+        hitColliders = Physics.OverlapSphere(transform.position, 2f);
+
+        // Loop through the colliders found by the overlap
+        foreach (Collider hitCollider in hitColliders)
+        {
+            if (hitCollider.gameObject.layer == LayerMask.NameToLayer("Grass"))
+            {
+                Debug.Log("You walk on grass");
+                // Play grass audio
+            }
+            else if (hitCollider.gameObject.layer == LayerMask.NameToLayer("Floor"))
+            {
+                Debug.Log("You walk on wood");
+                // Play wood audio
+            }
+            else if (hitCollider.gameObject.layer == LayerMask.NameToLayer("Concrete"))
+            {
+                Debug.Log("You walk on concrete");
+                // Play concrete audio
+            }
+        }
+    }
+
 }
