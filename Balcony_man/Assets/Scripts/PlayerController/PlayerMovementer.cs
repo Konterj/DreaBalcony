@@ -88,7 +88,7 @@ public class PlayerMovementer : MonoBehaviour
         LayerMask concreteLayer = LayerMask.GetMask("Concrete");
 
         // Replace Vector3.down with the player's position
-        hitColliders = Physics.OverlapSphere(transform.position, 2f);
+        hitColliders = Physics.OverlapSphere(transform.position, 0.5f);
 
         // Loop through the colliders found by the overlap
         foreach (Collider hitCollider in hitColliders)

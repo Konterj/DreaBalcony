@@ -22,7 +22,6 @@ public class EventManager : MonoBehaviour
     public void OnSetEvent()
     {
         _evenet.Current = EventCurrent;
-        Debug.Log("События: " + _evenet.names[_evenet.Current]);
     }
 
 }
