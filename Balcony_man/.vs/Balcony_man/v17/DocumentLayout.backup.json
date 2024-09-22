@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|f:\\working\\projects\\feat_balcony\\balcony_man\\balcony\\dreabalcony\\balcony_man\\assets\\scripts\\playercontroller\\playermovementer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller\\playermovementer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerMovementer.cs",
+              "DocumentMoniker": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\PlayerController\\PlayerMovementer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController\\PlayerMovementer.cs",
+              "ToolTip": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\PlayerController\\PlayerMovementer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerController\\PlayerMovementer.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAUwFEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T18:39:32.332Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

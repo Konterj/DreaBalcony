@@ -10,13 +10,13 @@ public class PlayerMovementer : MonoBehaviour
     [SerializeField] public float Gravitytation = -9.8f;
     [SerializeField] public float Sensentivity = 100f;
 
-    //private AudioSource _source;
-    //private AudioClip[] clips;
+    private AudioSource _source;
+    public AudioClip[] clips;
+    public float RadiusTrigger = 1f;
 
     private CharacterController _player;
     private float XRoted;
     private Vector3 Gravity;
-    
 
     // Start is called before the first frame update
     void Start()
@@ -35,16 +35,16 @@ public class PlayerMovementer : MonoBehaviour
     public void OnIntilization()
     {
         _player = GetComponent<CharacterController>();
-        // _source = GetComponent<AudioSource>();
+        _source = GetComponent<AudioSource>(); //Get Source
         
         //CLips Get
-        /*for(int i = 0; i < clips.Length; i++)
+        for(int i = 0; i < clips.Length; i++)
         {
             if(clips[i] is null)
             {
                 clips[i] = GetComponent<AudioClip>();
             }
-        }*/
+        }
 
         if(cam is null)
         {
@@ -65,9 +65,20 @@ public class PlayerMovementer : MonoBehaviour
         float RightOrLeft = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
         Vector3 direction = transform.forward * forward + transform.right * RightOrLeft;
         direction = Vector3.ClampMagnitude(direction, moveSpeed);
-        _player.Move(direction * Time.deltaTime);
+        _player.Move(direction);
         Gravity.y += Gravitytation * Time.deltaTime;
-        _player.Move(Gravity * Time.deltaTime);
+        _player.Move(Gravity);
+        //Play Audio
+        /*if(Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0 && !_source.isPlaying)
+        {
+            _player.GetComponent<AudioSource>().Play();
+        }
+        else if(Input.GetAxis("Vertical") == 0 || Input.GetAxis("Horizontal") == 0 && _source.isPlaying)
+        {
+            _player.GetComponent<AudioSource>().Stop();
+        }*/ //fix it and think a new idea for realize
+        
+
     }
 
     private void OnRotatedCam()
@@ -88,25 +99,22 @@ public class PlayerMovementer : MonoBehaviour
         LayerMask concreteLayer = LayerMask.GetMask("Concrete");
 
         // Replace Vector3.down with the player's position
-        hitColliders = Physics.OverlapSphere(transform.position, 0.5f);
+        hitColliders = Physics.OverlapSphere(transform.position, RadiusTrigger);
 
         // Loop through the colliders found by the overlap
         foreach (Collider hitCollider in hitColliders)
         {
             if (hitCollider.gameObject.layer == LayerMask.NameToLayer("Grass"))
             {
-                Debug.Log("You walk on grass");
-                // Play grass audio
+                _source.clip = clips[0]; //set grass audio
             }
             else if (hitCollider.gameObject.layer == LayerMask.NameToLayer("Floor"))
             {
-                Debug.Log("You walk on wood");
-                // Play wood audio
+                _source.clip = clips[1];   // set wood audio
             }
             else if (hitCollider.gameObject.layer == LayerMask.NameToLayer("Concrete"))
             {
-                Debug.Log("You walk on concrete");
-                // Play concrete audio
+                _source.clip = clips[2]; // set concrete audio
             }
         }
     }
