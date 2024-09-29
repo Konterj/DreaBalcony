@@ -1912,7 +1912,7 @@ PrefabInstance:
     - target: {fileID: 7073894868502111855, guid: 65c362100a7c658438970337cf05631b,
         type: 3}
       propertyPath: moveSpeed
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 7073894868502111855, guid: 65c362100a7c658438970337cf05631b,
         type: 3}
@@ -1928,7 +1928,7 @@ PrefabInstance:
         type: 3}
       propertyPath: clips.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: c1c05008775ec7f45b0071ba03f7b63b, type: 3}
+      objectReference: {fileID: 8300000, guid: 198231d240682794aaef30dad98595ea, type: 3}
     - target: {fileID: 7073894868502111855, guid: 65c362100a7c658438970337cf05631b,
         type: 3}
       propertyPath: clips.Array.data[2]
