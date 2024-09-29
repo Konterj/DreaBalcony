@@ -41,3 +41,14 @@ ehthumbs.db
 Thumbs.db
 Balcony_man/Assets/Models/Room/Texture/Балкон/UV_балкон.psd.meta
 Balcony_man/Assets/Models/Room/Texture/Балкон/UV_балкон.psd
+
+# Visual Studio temporary files and logs
+.vs/
+*.vscode/
+.vscode/
+*.vsidx
+*.backup.json
+
+# Unity logs
+Logs/
+*.log

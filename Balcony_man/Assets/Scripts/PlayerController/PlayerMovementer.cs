@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerMovementer : MonoBehaviour
@@ -68,17 +69,27 @@ public class PlayerMovementer : MonoBehaviour
         _player.Move(direction);
         Gravity.y += Gravitytation * Time.deltaTime;
         _player.Move(Gravity);
-        //Play Audio
-        /*if(Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0 && !_source.isPlaying)
-        {
-            _player.GetComponent<AudioSource>().Play();
-        }
-        else if(Input.GetAxis("Vertical") == 0 || Input.GetAxis("Horizontal") == 0 && _source.isPlaying)
-        {
-            _player.GetComponent<AudioSource>().Stop();
-        }*/ //fix it and think a new idea for realize
-        
 
+
+        //LaunchBool Cheked Audio
+        Vector3 Audio_Dir = direction;
+        Mathf.Round(Audio_Dir.magnitude);
+        //I doesn't thinkg it's work normally, but it's work
+        if (Audio_Dir.magnitude != 0f)
+        {
+            Debug.Log("direction:  " + Audio_Dir.magnitude);
+            if(!_source.isPlaying)
+            {
+                _source.Play();
+            }
+        }
+        else if(Audio_Dir.magnitude == 0)
+        {
+            if(_source.isPlaying)
+            {
+                _source.Stop();
+            }
+        } 
     }
 
     private void OnRotatedCam()
@@ -118,5 +129,4 @@ public class PlayerMovementer : MonoBehaviour
             }
         }
     }
-
 }
