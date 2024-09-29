@@ -72,6 +72,7 @@ public class PlayerMovementer : MonoBehaviour
 
 
         //LaunchBool Cheked Audio
+        //Audio now working
         Vector3 Audio_Dir = direction;
         Mathf.Round(Audio_Dir.magnitude);
         //I doesn't thinkg it's work normally, but it's work
