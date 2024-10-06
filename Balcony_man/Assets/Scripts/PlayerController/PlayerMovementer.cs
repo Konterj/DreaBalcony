@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovementer : MonoBehaviour
 {
@@ -17,6 +18,14 @@ public class PlayerMovementer : MonoBehaviour
     private CharacterController _player;
     private float XRoted;
     private Vector3 Gravity;
+    /// <summary>
+    /// Light and Switch
+    /// </summary>
+    public Light Light;
+    public Image cursor;
+    public Sprite[] setUse;
+    //LayerMask for Interactive
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,13 +39,19 @@ public class PlayerMovementer : MonoBehaviour
         OnMovementer();
         OnRotatedCam();
         OnCheckGroundForAudio();
+        OnLightRayCast();
     }
 
     public void OnIntilization()
     {
         _player = GetComponent<CharacterController>();
         _source = GetComponent<AudioSource>(); //Get Source
-        
+
+        if (Light is null)
+        {
+            Light = GetComponent<Light>();
+        }
+
         //CLips Get
         for(int i = 0; i < clips.Length; i++)
         {
@@ -45,11 +60,25 @@ public class PlayerMovementer : MonoBehaviour
                 clips[i] = GetComponent<AudioClip>();
             }
         }
-
-        if(cam is null)
+        // GetSprites for cursor
+        for(int i = 0; i < setUse.Length; i ++)
+        {
+            if (setUse[i] is null)
+            {
+                setUse[i] = GetComponent<Sprite>();
+            }
+        }
+        //Get Cursor Image
+        if (cursor is null)
+        {
+            cursor = GetComponent<Image>();
+        }
+            //cam
+            if (cam is null)
         {
             cam = GetComponent<Camera>();
         }
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = true;
     }
@@ -102,7 +131,7 @@ public class PlayerMovementer : MonoBehaviour
         _player.transform.Rotate(Vector3.up * X_rot);
     }
 
-        private void OnCheckGroundForAudio()
+    private void OnCheckGroundForAudio()
     {
         Collider[] hitColliders;
         LayerMask grassLayer = LayerMask.GetMask("Grass");
@@ -129,4 +158,29 @@ public class PlayerMovementer : MonoBehaviour
             }
         }
     }
+
+    public void OnLightRayCast()
+    {
+        //LayerMask for interactive
+        LayerMask interactive = LayerMask.GetMask("Interact");
+        //LightControl
+        RaycastHit hit;
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        cursor.sprite = setUse[0];
+        if (Physics.Raycast(ray, out hit, 3f, interactive))
+        {
+            cursor.sprite = setUse[1];
+        }
+        if (Input.GetMouseButtonDown(0))
+        {
+            if(Physics.Raycast(ray, out hit, 3f))
+            {
+                if(hit.collider.CompareTag("Light"))
+                {
+                    Light.enabled = !Light.enabled;
+                }
+            }
+        }
+    }
+
 }
