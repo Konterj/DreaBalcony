@@ -5,7 +5,7 @@ using UnityEngine;
 public class InterctiveSound : MonoBehaviour
 {
     public AudioSource source_interactive;
-    public ElementAudio[] elements;
+    public List<ElementAudio> elements = new();
 
     public void LaunchAudio(int nameAudio, int CurrentAudio)
     {
