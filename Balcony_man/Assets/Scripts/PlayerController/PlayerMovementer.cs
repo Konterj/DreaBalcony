@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -177,10 +180,10 @@ public class PlayerMovementer : MonoBehaviour
             {
                 if(hit.collider.CompareTag("Light"))
                 {
+                    
                     Light.enabled = !Light.enabled;
                 }
             }
         }
     }
-
 }
