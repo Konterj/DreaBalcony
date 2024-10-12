@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 773830618613225369}
   - component: {fileID: 901559224104397629}
   - component: {fileID: 7073894868502111855}
+  - component: {fileID: 8747400232934965971}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -188,3 +189,20 @@ MonoBehaviour:
   Sensentivity: 100
   clips: []
   RadiusTrigger: 1
+  Light: {fileID: 0}
+  cursor: {fileID: 0}
+  setUse: []
+--- !u!114 &8747400232934965971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932752000084731900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de6f0ffe6bbb25748b4e8bd5b0bc587c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractiveSound: []
+  source_interactive: {fileID: 0}

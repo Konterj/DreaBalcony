@@ -28,8 +28,8 @@ public class PlayerMovementer : MonoBehaviour
     public Image cursor;
     public Sprite[] setUse;
     //LayerMask for Interactive
-
-
+    private InterctiveSound interctiveSound;
+    private bool SwitchAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +49,7 @@ public class PlayerMovementer : MonoBehaviour
     {
         _player = GetComponent<CharacterController>();
         _source = GetComponent<AudioSource>(); //Get Source
+        interctiveSound = GetComponent<InterctiveSound>(); // for Sounds
 
         if (Light is null)
         {
@@ -174,14 +175,23 @@ public class PlayerMovementer : MonoBehaviour
         {
             cursor.sprite = setUse[1];
         }
+
         if (Input.GetMouseButtonDown(0))
         {
             if(Physics.Raycast(ray, out hit, 3f))
             {
                 if(hit.collider.CompareTag("Light"))
                 {
-                    
+                    SwitchAudio =! SwitchAudio;
                     Light.enabled = !Light.enabled;
+                    if (SwitchAudio)
+                    {
+                        interctiveSound.LaunchAudio(0 /* SwitchAudio*/, 0);
+                    }
+                    else if(!SwitchAudio)
+                    {
+                        interctiveSound.LaunchAudio(0 /* SwitchAudio*/, 1);
+                    }
                 }
             }
         }
