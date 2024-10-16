@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -30,6 +27,8 @@ public class PlayerMovementer : MonoBehaviour
     //LayerMask for Interactive
     private InterctiveSound interctiveSound;
     private bool SwitchAudio;
+    //tp
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +49,7 @@ public class PlayerMovementer : MonoBehaviour
         _player = GetComponent<CharacterController>();
         _source = GetComponent<AudioSource>(); //Get Source
         interctiveSound = GetComponent<InterctiveSound>(); // for Sounds
+        
 
         if (Light is null)
         {
@@ -165,20 +165,20 @@ public class PlayerMovementer : MonoBehaviour
 
     public void OnLightRayCast()
     {
-        //LayerMask for interactive
+        //LayerMask for interactive 
         LayerMask interactive = LayerMask.GetMask("Interact");
         //LightControl
         RaycastHit hit;
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         cursor.sprite = setUse[0];
-        if (Physics.Raycast(ray, out hit, 3f, interactive))
+        if (Physics.Raycast(ray, out hit, 2f, interactive))
         {
             cursor.sprite = setUse[1];
         }
 
         if (Input.GetMouseButtonDown(0))
         {
-            if(Physics.Raycast(ray, out hit, 3f))
+            if(Physics.Raycast(ray, out hit, 2f))
             {
                 if(hit.collider.CompareTag("Light"))
                 {
