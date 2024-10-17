@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,15 +17,19 @@ public class Dev_Mode : MonoBehaviour
     public Button Tp_street;
     public Button Tp_house;
 
+    public float SmoathTime = 2f;
+
+    private bool CoroutineS = false;
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         Intilization();
         AddListenerButtons();
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         DevMenu();
     }
@@ -40,10 +45,6 @@ public class Dev_Mode : MonoBehaviour
         {
             Person = GetComponent<GameObject>();
         }
-        for (int i = 0; i < SpawnPoint.Count; i++) 
-        {
-            SpawnPoint[i] = GetComponent<Transform>();
-        }
     }
     private void AddListenerButtons()
     {
@@ -54,12 +55,25 @@ public class Dev_Mode : MonoBehaviour
 
     private void DevMenu()
     {
+        //Cheked
+        if(!CoroutineS)
+        {
+            Person.GetComponent<PlayerMovementer>().enabled = true;
+        }
+        else
+        {
+            Person.GetComponent<PlayerMovementer>().enabled = false;
+        }
+        //
+
         if (!isOpen)
         {
             Cursor.lockState = CursorLockMode.Locked;
+            Person.GetComponent<PlayerMovementer>().enabled = true;
         }
         if (Input.GetKeyDown(KeyCode.Tab))
         {
+            Person.GetComponent<PlayerMovementer>().enabled = false;
             isOpen = !isOpen;
             Cursor.visible = isOpen;
             Cursor.lockState = CursorLockMode.None;
@@ -67,15 +81,44 @@ public class Dev_Mode : MonoBehaviour
         Panel_Dev.SetActive(isOpen);
     }
 
-    private void OnTeleportHouse()
+    public void OnTeleportHouse()
     {
-        Debug.Log("Tp on house");
-        Person.transform.localPosition = SpawnPoint[0].transform.position;
+        StartCoroutine(PlayTpHouse());
     }
 
-    private void OnTeleportStreet()
+    public void OnTeleportStreet()
     {
-        Debug.Log("Tp on Street");
-        Person.transform.localPosition = SpawnPoint[1].transform.position;
+        StartCoroutine(PlayTpStreet());
+    }
+
+    IEnumerator PlayTpStreet()
+    {
+        CoroutineS = true;
+        while (CoroutineS)
+        {
+            Debug.Log("Tp on Street");
+            Vector3 person = Person.transform.position;
+            Vector3 spawnPoint1 = SpawnPoint[1].transform.position;
+            Person.transform.position = Vector3.Lerp(person, spawnPoint1, SmoathTime * Time.deltaTime);
+            yield return new WaitForSeconds(2f);
+            CoroutineS = false;
+            yield return null;
+        }
+    }
+
+    IEnumerator PlayTpHouse()
+    {
+        CoroutineS = true;
+        while (CoroutineS)
+        {
+            Debug.Log("Tp on house");
+            Vector3 person = Person.transform.position;
+            Vector3 spawnPoint0 = SpawnPoint[0].transform.position;
+            Person.transform.position = Vector3.Lerp(person, spawnPoint0, SmoathTime * Time.deltaTime);
+            yield return new WaitForSeconds(2f);
+            CoroutineS = false;
+            yield return null;
+        }
+
     }
 }
