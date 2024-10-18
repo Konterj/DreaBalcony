@@ -19,8 +19,6 @@ public class Dev_Mode : MonoBehaviour
 
     public float SmoathTime = 2f;
 
-    private bool CoroutineS = false;
-
     // Start is called before the first frame update
     private void Start()
     {
@@ -55,17 +53,6 @@ public class Dev_Mode : MonoBehaviour
 
     private void DevMenu()
     {
-        //Cheked
-        if(!CoroutineS)
-        {
-            Person.GetComponent<PlayerMovementer>().enabled = true;
-        }
-        else
-        {
-            Person.GetComponent<PlayerMovementer>().enabled = false;
-        }
-        //
-
         if (!isOpen)
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -83,42 +70,12 @@ public class Dev_Mode : MonoBehaviour
 
     public void OnTeleportHouse()
     {
-        StartCoroutine(PlayTpHouse());
+        Person.transform.position = SpawnPoint[0].transform.position;
     }
 
     public void OnTeleportStreet()
     {
-        StartCoroutine(PlayTpStreet());
+        Person.transform.position = SpawnPoint[1].transform.position;
     }
 
-    IEnumerator PlayTpStreet()
-    {
-        CoroutineS = true;
-        while (CoroutineS)
-        {
-            Debug.Log("Tp on Street");
-            Vector3 person = Person.transform.position;
-            Vector3 spawnPoint1 = SpawnPoint[1].transform.position;
-            Person.transform.position = Vector3.Lerp(person, spawnPoint1, SmoathTime * Time.deltaTime);
-            yield return new WaitForSeconds(2f);
-            CoroutineS = false;
-            yield return null;
-        }
-    }
-
-    IEnumerator PlayTpHouse()
-    {
-        CoroutineS = true;
-        while (CoroutineS)
-        {
-            Debug.Log("Tp on house");
-            Vector3 person = Person.transform.position;
-            Vector3 spawnPoint0 = SpawnPoint[0].transform.position;
-            Person.transform.position = Vector3.Lerp(person, spawnPoint0, SmoathTime * Time.deltaTime);
-            yield return new WaitForSeconds(2f);
-            CoroutineS = false;
-            yield return null;
-        }
-
-    }
 }
