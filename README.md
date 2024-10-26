@@ -10,8 +10,10 @@
     <img src="Canvas_Mechanics.png" alt="Canvas from Obsidian">
     <p>
         Большое количество времени я потратил на создание моделей.
+        <p>
         ENG
         The most a cout time, I lost on an create a models
+        </p>
     </p>
 </body>
 </html>
