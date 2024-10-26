@@ -8,5 +8,10 @@
 <body>
     <h4>Mechanic Core</h4>
     <img src="Canvas_Mechanics.png" alt="Canvas from Obsidian">
+    <p>
+        Большое количество времени я потратил на создание моделей.
+        ENG
+        The most a cout time, I lost on an create a models
+    </p>
 </body>
 </html>
