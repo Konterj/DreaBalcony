@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|f:\\working\\projects\\feat_balcony\\balcony_man\\balcony\\dreabalcony\\balcony_man\\assets\\scripts\\cinemator_event\\controlcutscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cinemator_event\\controlcutscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|f:\\working\\projects\\feat_balcony\\balcony_man\\balcony\\dreabalcony\\balcony_man\\assets\\scripts\\testscripts\\dev_mode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\testscripts\\dev_mode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller\\playermovementer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\assets\\scripts\\engine\\evenetsystem\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\engine\\evenetsystem\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\assets\\scripts\\playercontroller\\interctivesound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller\\interctivesound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\assets\\scripts\\engine\\evenetsystem\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\engine\\evenetsystem\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,25 +35,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ControlCutscene.cs",
+              "DocumentMoniker": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\Cinemator_Event\\ControlCutscene.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Cinemator_Event\\ControlCutscene.cs",
+              "ToolTip": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\Cinemator_Event\\ControlCutscene.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Cinemator_Event\\ControlCutscene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T16:32:06.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Dev_Mode.cs",
               "DocumentMoniker": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\TestScripts\\Dev_Mode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TestScripts\\Dev_Mode.cs",
               "ToolTip": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\TestScripts\\Dev_Mode.cs",
               "RelativeToolTip": "Assets\\Scripts\\TestScripts\\Dev_Mode.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAHsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T17:14:48.856Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerMovementer.cs",
               "DocumentMoniker": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\PlayerController\\PlayerMovementer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController\\PlayerMovementer.cs",
               "ToolTip": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\PlayerController\\PlayerMovementer.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController\\PlayerMovementer.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAUwLYAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAALYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T18:39:32.332Z",
               "EditorCaption": ""
@@ -62,14 +79,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController\\InterctiveSound.cs",
               "ToolTip": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\PlayerController\\InterctiveSound.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController\\InterctiveSound.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T15:54:07.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "EventManager.cs",
               "DocumentMoniker": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\Engine\\EvenetSystem\\EventManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Engine\\EvenetSystem\\EventManager.cs",

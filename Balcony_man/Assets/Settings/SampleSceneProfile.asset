@@ -119,28 +119,6 @@ MonoBehaviour:
   texture:
     m_OverrideState: 1
     m_Value: {fileID: 0}
---- !u!114 &-4806646225729575081
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70afe9e12c7a7ed47911bb608a23a8ff, type: 3}
-  m_Name: SplitToning
-  m_EditorClassIdentifier: 
-  active: 1
-  shadows:
-    m_OverrideState: 1
-    m_Value: {r: 0.10201572, g: 0, b: 0.23584908, a: 1}
-  highlights:
-    m_OverrideState: 1
-    m_Value: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
-  balance:
-    m_OverrideState: 1
-    m_Value: 42
 --- !u!114 &-3315295613117675177
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -207,7 +185,6 @@ MonoBehaviour:
   - {fileID: -5732612525706992027}
   - {fileID: 8089121414424866861}
   - {fileID: 7290429086238917094}
-  - {fileID: -4806646225729575081}
 --- !u!114 &849379129802519247
 MonoBehaviour:
   m_ObjectHideFlags: 3
