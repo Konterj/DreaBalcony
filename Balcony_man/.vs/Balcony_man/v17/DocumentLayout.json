@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|f:\\working\\projects\\feat_balcony\\balcony_man\\balcony\\dreabalcony\\balcony_man\\assets\\scripts\\scenemanagment\\cutscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenemanagment\\cutscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|f:\\working\\projects\\feat_balcony\\balcony_man\\balcony\\dreabalcony\\balcony_man\\assets\\scripts\\scenemanagment\\scenemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenemanagment\\scenemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|f:\\working\\projects\\feat_balcony\\balcony_man\\balcony\\dreabalcony\\balcony_man\\assets\\scripts\\scenemanagment\\fadeit_transation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenemanagment\\fadeit_transation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|f:\\working\\projects\\feat_balcony\\balcony_man\\balcony\\dreabalcony\\balcony_man\\assets\\scripts\\cinemator_event\\controlcutscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\assets\\scripts\\cinemator_event\\controlcutscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8ECF6622-D09A-1810-8999-AA23DE58E2BA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cinemator_event\\controlcutscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,24 +42,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SceneManagement.cs",
+              "DocumentMoniker": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\SceneManagment\\SceneManagement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneManagment\\SceneManagement.cs",
+              "ToolTip": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\SceneManagment\\SceneManagement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneManagment\\SceneManagement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T19:13:14.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CutsceneManager.cs",
+              "DocumentMoniker": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\SceneManagment\\CutsceneManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneManagment\\CutsceneManager.cs",
+              "ToolTip": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\SceneManagment\\CutsceneManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneManagment\\CutsceneManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T19:05:18.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FadeIT_Transation.cs",
               "DocumentMoniker": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\SceneManagment\\FadeIT_Transation.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SceneManagment\\FadeIT_Transation.cs",
               "ToolTip": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\SceneManagment\\FadeIT_Transation.cs",
               "RelativeToolTip": "Assets\\Scripts\\SceneManagment\\FadeIT_Transation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T17:00:11.335Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ControlCutscene.cs",
               "DocumentMoniker": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\Cinemator_Event\\ControlCutscene.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Cinemator_Event\\ControlCutscene.cs",
@@ -59,12 +93,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Cinemator_Event\\ControlCutscene.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T16:32:06.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T16:32:06.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Dev_Mode.cs",
               "DocumentMoniker": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\TestScripts\\Dev_Mode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TestScripts\\Dev_Mode.cs",
@@ -76,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "PlayerMovementer.cs",
               "DocumentMoniker": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\PlayerController\\PlayerMovementer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController\\PlayerMovementer.cs",
@@ -88,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "InterctiveSound.cs",
               "DocumentMoniker": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\PlayerController\\InterctiveSound.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController\\InterctiveSound.cs",
@@ -100,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "EventManager.cs",
               "DocumentMoniker": "F:\\Working\\Projects\\Feat_Balcony\\Balcony_Man\\Balcony\\DreaBalcony\\Balcony_man\\Assets\\Scripts\\Engine\\EvenetSystem\\EventManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Engine\\EvenetSystem\\EventManager.cs",
